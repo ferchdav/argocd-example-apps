@@ -30,7 +30,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/argoproj/argocd-example-apps.git
+        repoURL: https://github.com/ferchdav/argocd-example-apps.git
         targetRevision: master
         path: '{{path}}'
       destination:
