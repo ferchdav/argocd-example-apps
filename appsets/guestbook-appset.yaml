@@ -18,7 +18,7 @@ spec:
         path: guestbook
       - name: guestbook-app4
         namespace: app4
-        path: helm-guestbook        
+        path: helm-guestbook
   template:
     metadata:
       name: '{{name}}'
