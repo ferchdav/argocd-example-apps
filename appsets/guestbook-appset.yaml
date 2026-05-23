@@ -31,7 +31,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/argoproj/argocd-example-apps.git
-        targetRevision: HEAD
+        targetRevision: master
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
