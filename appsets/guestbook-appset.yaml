@@ -7,18 +7,23 @@ spec:
   generators:
   - list:
       elements:
+
       - name: guestbook-app1
         namespace: app1
         path: guestbook-A
+
       - name: guestbook-app2
         namespace: app2
         path: guestbook-A
+
       - name: guestbook-app3
         namespace: app3
         path: guestbook-B
+
       # - name: guestbook-app4
       #   namespace: app4
       #   path: helm-guestbook
+
   template:
     metadata:
       name: '{{name}}'
