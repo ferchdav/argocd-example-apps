@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: argocd-mcp
+  namespace: mcp
+spec:
+  ingressClassName: nginx
+
+  rules:
+    - host: argocd-mcp.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: argocd-mcp
+                port:
+                  number: 3000
