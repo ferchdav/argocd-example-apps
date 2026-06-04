@@ -21,10 +21,17 @@ spec:
             - sh
             - -c
 
+          # args:
+          #   - |
+          #     npm install -g argocd-mcp@latest && \
+          #     argocd-mcp sse --port 3000
+
           args:
             - |
-              npm install -g argocd-mcp@latest && \
-              argocd-mcp sse
+              set -x
+              npm install -g argocd-mcp@latest
+              which argocd-mcp
+              argocd-mcp http --port 3000
 
           env:
             - name: ARGOCD_BASE_URL
