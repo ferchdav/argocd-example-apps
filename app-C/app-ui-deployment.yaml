@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-ui
+name: app-ui
 spec:
-  replicas: 1
-  revisionHistoryLimit: 3
-  selector:
-    matchLabels:
-      app: app-ui
-  template:
-    metadata:
-      labels:
-        app: app-ui
-    spec:
-      containers:
-      - image: nginx:stable-alpine
-        name: app-ui
-        ports:
-        - containerPort: 80
+replicas: 1
+revisionHistoryLimit: 3
+selector:
+matchLabels:
+app: app-ui
+template:
+metadata:
+labels:
+app: app-ui
+spec:
+containers:
+- image: nginx:stable-alpine
+  name: app-ui
+  ports:
+  - containerPort: 80
