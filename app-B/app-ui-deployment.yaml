@@ -14,7 +14,8 @@ spec:
         app: app-ui
     spec:
       containers:
-      - image: nginx:stable-alpine
+      - image: gcr.io/heptio-images/ks-app-demo:0.2
+        # image: nginx:stable-alpine
         name: app-ui
         ports:
         - containerPort: 80
