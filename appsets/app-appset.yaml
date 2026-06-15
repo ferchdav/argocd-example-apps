@@ -22,7 +22,7 @@ spec:
 
       - name: app-app4
         namespace: app4
-        path: app-B
+        path: app-C
         # path: helm-app
 
   template:
