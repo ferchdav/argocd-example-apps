@@ -8,20 +8,20 @@ spec:
   - list:
       elements:
 
-      - name: app-app1
-        namespace: app1
+      - name: app-appONE
+        namespace: appA
         path: app-A
 
-      - name: app-app2
-        namespace: app2
+      - name: app-appTWO
+        namespace: appB
         path: app-A
 
-      - name: app-app3
-        namespace: app3
+      - name: app-appTHREE
+        namespace: appC
         path: app-B
 
-      - name: app-app4
-        namespace: app4
+      - name: app-appFOUR
+        namespace: appD
         path: app-C
         # path: helm-app
 
@@ -29,7 +29,7 @@ spec:
     metadata:
       name: '{{name}}'
     spec:
-      project: default
+      project: project-2
       source:
         repoURL: https://github.com/ferchdav/argocd-example-apps.git
         targetRevision: master
